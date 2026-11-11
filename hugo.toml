@@ -1,0 +1,58 @@
+baseURL = "https://yeababate.github.io/"
+languageCode = "en-us"
+title = "Yeabsira // portfolio"
+theme = "macchiato"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.123.0"
+
+paginate = 6
+enableRobotsTXT = true
+
+[params]
+  author = "Yeabsira"
+  description = "Projects and experiments in Go and web development."
+  tagline = "Learning by building."
+  favicon = "favicon.svg"
+  wideLayout = false
+
+  [params.prompt]
+    user = "yeabsira"
+    host = "portfolio"
+    path = "~/projects"
+
+  [params.social]
+    github = "https://github.com/Yeababate"
+    linkedin = "https://www.linkedin.com/in/yeabsira-guangul-aa35a7279/"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Projects"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    lineNos = false
+    style = "monokai"
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
