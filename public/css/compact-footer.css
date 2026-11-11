@@ -1,0 +1,22 @@
+.site-main {
+  min-height: 0;
+  padding-bottom: 1.5rem;
+  /* gap above footer */
+}
+
+.site-footer {
+  padding: 0.1rem 0;
+  /* footer height */
+  font-size: 0.75rem;
+  /* text size */
+}
+
+/* Keep the footer at the viewport bottom on pages with little content. */
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+.site-header, .site-footer { flex-shrink: 0; }
+.site-main { flex: 1 0 auto; }

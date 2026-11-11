@@ -88,6 +88,10 @@ html { scroll-behavior: smooth; }
 }
 
 body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   background: var(--base);
   color: var(--text);
@@ -133,7 +137,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .wrap--wide { max-width: 1080px; }
 
-.site-main { min-height: 60vh; padding: 2.5rem 0 4rem; }
+.site-main { min-height: 0; flex: 1 0 auto; padding: 2.5rem 0 1.5rem; }
 
 /* =========================================================
    Reading progress bar (signature element, single posts only)
@@ -610,10 +614,12 @@ code { }
    Footer
    ========================================================= */
 .site-footer {
+  flex-shrink: 0;
   border-top: 1px solid var(--surface0);
-  padding: 2rem 0;
+  padding: 0.9rem 0;
   color: var(--overlay1);
   font-size: 0.85rem;
+  line-height: 1.5;
 }
 .site-footer__inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; align-items: center; }
 .site-footer a { color: var(--overlay1); }
