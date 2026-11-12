@@ -1,0 +1,14 @@
+{{ define "main" }}
+<header class="post-header" style="border-bottom: 1px solid var(--surface0); padding-bottom: 1.2rem;">
+  <p class="post-header__meta"><span>{{ len .RegularPages }} projects</span></p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="post-header__desc">{{ . }}</div>{{ end }}
+</header>
+<ul class="post-list">
+  {{ range $i, $p := .RegularPages.ByWeight }}
+    {{ partial "post-card.html" (dict "page" $p "index" $i) }}
+  {{ else }}
+    <li>No projects yet.</li>
+  {{ end }}
+</ul>
+{{ end }}

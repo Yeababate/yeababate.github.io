@@ -1,9 +1,10 @@
 <footer class="site-footer">
   <div class="wrap{{ if .Site.Params.wideLayout }} wrap--wide{{ end }} site-footer__inner">
-    <span>&copy; {{ now.Year }} {{ .Site.Params.author | default .Site.Title }}. Built with Hugo &amp; Macchiato.</span>
+    <span>{{ now.Year }} yeabsira</span>
     <ul class="footer-links">
       {{ with .Site.Params.social.github }}<li><a href="{{ . }}" target="_blank" rel="noopener">GitHub</a></li>{{ end }}
-      {{ with .Site.Params.social.linkedin }}<li><a href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a></li>{{ end }}
+      {{ with .Site.Params.social.linkedin }}<li><a href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a></li>{{
+      end }}
     </ul>
   </div>
 </footer>

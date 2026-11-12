@@ -5,17 +5,16 @@
 </section>
 
 {{ $sectionPages := where .Site.RegularPages "Type" "posts" }}
-{{ if eq (len $sectionPages) 0 }}{{ $sectionPages = .Site.RegularPages }}{{ end }}
-{{ $paginator := .Paginate $sectionPages }}
+{{ $featured := first 3 $sectionPages.ByWeight }}
 
-<p class="section-label">Recent posts</p>
+<p class="section-label">Selected projects</p>
 <ul class="post-list">
-  {{ range $i, $p := $paginator.Pages }}
+  {{ range $i, $p := $featured }}
     {{ partial "post-card.html" (dict "page" $p "index" $i) }}
   {{ else }}
-    <li style="color: var(--overlay1); font-family: 'IBM Plex Mono', monospace;">No posts yet — create one with <code>hugo new posts/my-first-post.md</code>.</li>
+    <li style="color: var(--overlay1); font-family: 'IBM Plex Mono', monospace;">No projects yet.</li>
   {{ end }}
 </ul>
 
-{{ partial "pagination.html" $paginator }}
+<p><a href="{{ "posts/" | relURL }}">View all projects →</a></p>
 {{ end }}
