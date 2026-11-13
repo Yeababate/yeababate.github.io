@@ -1,7 +1,7 @@
 {
   "title": "Literary Lions Forum",
-  "description": "A book discussion forum built with Go and SQLite. Readers can publish posts, reply to discussions, react to content, and find conversations through full-text search.",
-  "summary": "A book discussion forum built with Go and SQLite. Readers can publish posts, reply to discussions, react to content, and find conversations through full-text search.",
+  "description": "A Go and SQLite forum for book discussions, comments, reactions, and full-text search. My contribution focused on the backend.",
+  "summary": "A Go and SQLite forum for book discussions, comments, reactions, and full-text search. My contribution focused on the backend.",
   "weight": 2,
   "technologies": [
     "Go",
@@ -18,6 +18,13 @@
 }
 
 A book discussion forum built with Go and SQLite. Readers can publish posts, reply to discussions, react to content, and find conversations through full-text search.
+
+
+## My contribution
+
+My work focused primarily on the backend of this team project. The application uses Go and SQLite, with separate layers for HTTP handlers, services, repositories, middleware, and database access.
+
+The backend supports the forum’s discussions and interactions, while server-rendered HTML provides the interface.
 
 ## What it does
 

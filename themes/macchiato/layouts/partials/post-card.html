@@ -6,9 +6,7 @@
   <a class="post-card" href="{{ $page.RelPermalink }}" style="--accent: {{ $accent }};">
     <h3 class="post-card__title">{{ $page.Title }}</h3>
     <div class="post-card__meta">
-      {{ if not $page.Date.IsZero }}<span>{{ $page.Date.Format "02 Jan 2006" }}</span>{{ end }}
-      <span>{{ $page.ReadingTime }} min read</span>
-      {{ with $page.Params.tags }}<span>{{ delimit . ", " }}</span>{{ end }}
+      {{ with $page.Params.technologies }}<span>{{ delimit . ", " }}</span>{{ end }}
     </div>
     {{ if $page.Description }}
       <p class="post-card__excerpt">{{ $page.Description }}</p>

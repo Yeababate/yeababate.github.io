@@ -14,7 +14,7 @@ I'm Yeabsira, a software developer learning Go and exploring the space between c
 
 ## Projects
 
-My work includes a book discussion forum, a movies REST API, a text-art encoder/decoder interface, and Lease Loop, a team hackathon project where I focused on the Money Core.
+My work includes backend development for a book discussion forum, contributions across a movies REST API, a text-art encoder/decoder interface, and the Money Core for Lease Loop. I was also responsible for the algorithm in Stations Pathfinder, a train-routing simulation.
 
 [Explore my projects](/posts/)
 

@@ -7,7 +7,7 @@
     {{ if $isPost }}
       <p class="post-header__meta">
         {{ if not .Date.IsZero }}<span>{{ .Date.Format "02 Jan 2006" }}</span>{{ end }}
-        <span>{{ .ReadingTime }} min read</span>
+        {{ with .Params.technologies }}<span>{{ delimit . ", " }}</span>{{ end }}
         {{ if .Params.draft }}<span>Draft</span>{{ end }}
       </p>
     {{ end }}
